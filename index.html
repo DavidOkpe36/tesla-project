@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header" id="container">
+    
+         <nav>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#" class="text" id="models">Model 3</a></li>
+                <li><a href="#" class="text" id="model3">Model s</a></li>
+                <li><a href="#" class="text" id="modelx">Model x</a></li>
+                <li><a href="#" class="text" id="modely">Model y</a></li>
+            </ul>
+                  <a href="#" class="btn">Reserve Now</a>
+         </nav>
+      
+
+         <div class="info">
+            <div>
+                <h2 id="text">1.9 s</h2>
+                <p id="para">60 mph</p>
+            </div>
+            <div>
+                <h2 id="mph">200 mph</h2>
+                <p id="top-speed">Top speed</p>
+            </div>
+            <div>
+                <h2 id="millage">396 mi</h2>
+                <p id="range">Max Range</p>
+            </div>
+            <div class="line">
+
+            </div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+         </div>
+
+
+    </div>
+
+<script>
+
+let container = document.getElementById('container')
+let ms = document.getElementById('models')
+let m3 = document.getElementById('model3')
+let mx = document.getElementById('modelx')
+let my = document.getElementById('modely')
+let model = document.getElementById('model')
+let text = document.getElementById('text')
+let para = document.getElementById('para')
+let mph = document.getElementById('mph')
+let topSpeed = document.getElementById('top-speed')
+let millage = document.getElementById('millage')
+let range = document.getElementById('range')
+
+ms.onclick = function() {
+    container.style.backgroundImage =  "url(/images/image-1.png)";
+    model.innerText = "model S"
+    text.innerText = "1.9 s"
+    para.innerText = "60 mph"
+    mph.innerText = "220 mph"
+    topSpeed.innerText = "Top Speed"
+    millage.innerText = "396"
+    range.innerText = "Max Range"
+}
+m3.onclick = function() {
+    container.style.backgroundImage =  "url(/images/image-2.png)";
+    model.innerText = "model 3"
+    text.innerText = "2.3 s"
+    para.innerText = "90 mph"
+    mph.innerText = "250 mph"
+    topSpeed.innerText = "Top Speed"
+    millage.innerText = "420"
+    range.innerText = "Max Range"
+}
+mx.onclick = function() {
+    container.style.backgroundImage =  "url(/images/image-3.png)";
+    model.innerText = "model X"
+    text.innerText = "2.5 s"
+    para.innerText = "120 mph"
+    mph.innerText = "270 mph"
+    topSpeed.innerText = "Top Speed"
+    millage.innerText = "450"
+    range.innerText = "Max Range"
+}
+my.onclick = function() {
+    container.style.backgroundImage =  "url(/images/image-4.png)";
+    model.innerText = "model Y"
+    text.innerText = "2.7 s"
+    para.innerText = "150 mph"
+    mph.innerText = "300 mph"
+    topSpeed.innerText = "Top Speed"
+    millage.innerText = "470"
+    range.innerText = "Max Range"
+}
+    
+</script>
+
+</body>
+</html>
